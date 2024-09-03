@@ -2,7 +2,7 @@ from tkinter import *
 
 window = Tk()
 window.title("BMI Calculator")
-window.geometry("300x240")
+window.geometry("300x220")
 window.resizable(False, False)
 window.config(bg="Dark Gray")
 
