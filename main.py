@@ -31,11 +31,17 @@ def runProgram():
         BMIstr = str(BMI)
         if BMI <= 16.0:
             label.config(text=f"BMI = {BMIstr} / You are severely underweight",
+                         font=("Arial", 12, "underline"), fg="#640606", bg="Dark Gray")
+            label.place(x=150 - label.winfo_width() / 2, y=190)
+            label.update()
+            label.place(x=150 - label.winfo_width() / 2, y=190)
+        elif 16.00 < BMI < 17.00:
+            label.config(text=f"BMI = {BMIstr} / You are moderately underweight",
                          font=("Arial", 12, "underline"), fg="#C00909", bg="Dark Gray")
             label.place(x=150 - label.winfo_width() / 2, y=190)
             label.update()
             label.place(x=150 - label.winfo_width() / 2, y=190)
-        elif 16.00 < BMI < 18.49:
+        elif 17.00 < BMI < 18.49:
             label.config(text=f"BMI = {BMIstr} / You are underweight",
                          font=("Arial", 12, "underline"), fg="#F10909", bg="Dark Gray")
             label.place(x=150 - label.winfo_width() / 2, y=190)
